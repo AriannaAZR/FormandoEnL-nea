@@ -196,9 +196,10 @@
   /* ── COURSE GRID ── */
   .content-area {
     position: relative;
-    padding: 40px;
+    padding: 40px 0 80px 80px;
     border-radius: var(--card-radius);
     min-height: 500px;
+    max-width: 1376px;
   }
   .content-area::before {
     content: '';
@@ -268,7 +269,7 @@
     aspect-ratio: 16/9;
     object-fit: cover;
     display: block;
-    background: var(--navy);
+    background: var(--white);
   }
   .card-thumb-placeholder {
     width: 100%;
