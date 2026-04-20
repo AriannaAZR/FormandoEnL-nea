@@ -132,9 +132,8 @@
     color: var(--black-text);
     margin-bottom: 16px;
   }
-  .sidebar-
-  .prog-item {
-    display: flex;
+  .prog-item-new {
+   display: flex;
     align-items: center;
     gap: 10px;
     padding: 10px 12px;
@@ -145,8 +144,10 @@
     font-weight: 500;
     color: var(--navy);
     text-decoration: none;
+    
   }
-  .prog-item:hover { background: rgba(0,0,0,.1); color: #000; }
+
+  .prog-item-new:hover { background: rgba(0,0,0,.1); color: #000; }
   .prog-icon {
     width: 32px; height: 32px;
     border-radius: 8px;
@@ -195,7 +196,7 @@
   /* ── COURSE GRID ── */
   .content-area {
     position: relative;
-    padding: 40px;
+    padding: 40px 0 60px 40px;
     border-radius: var(--card-radius);
     min-height: 500px;
   }
@@ -392,7 +393,9 @@
     height: 100%;
   }
   .course-card.featured .card-body {
-    padding: 32px 40px;
+    padding: 35px 40px;
+    max-width: 1360px;
+    margin: auto;
   }
   .featured-tag {
     display: inline-block;
