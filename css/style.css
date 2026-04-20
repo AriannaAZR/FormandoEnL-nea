@@ -192,7 +192,13 @@
   }
  
   /* ── COURSE GRID ── */
-  .content-area {}
+  .content-area {
+    background-image: url('../img/fondo inicial.webp');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
  
   .section-header {
     display: flex;
@@ -212,6 +218,7 @@
     font-weight: 700;
     padding: 4px 12px;
     border-radius: 50px;
+    
   }
  
   .courses-grid {
@@ -470,3 +477,4 @@
     text-decoration: none;
     color: inherit;
   }
+  
