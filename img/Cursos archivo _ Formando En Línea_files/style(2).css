@@ -1,0 +1,214 @@
+/**
+ * Theme Name:     Estrategas en Formación
+ * Author:         ThimPress
+ * Template:       edu-press
+ * Text Domain:	   edu-press-child
+ * Description:    Plantilla de Gestión de Sistema de Aprendizaje con ajustes personalizados para Estrategas en Formación.
+ * Theme URI:      https://gulupadigital.com/
+ * Author URI:     https://gulupadigital.com/
+ * Version:        1.1
+ */
+
+/* Formulario de programa */
+.form-comment h3#reply-title {
+  color: #00030f;
+}
+.form-comment * {
+  font-family: "Inter" !important;
+}
+.form-comment a {
+  color: #faa333 !important;
+}
+.form-comment .comment-form > p {
+  width: calc(50% - 8px);
+  padding: 0 !important;
+  margin: 4px 0px;
+}
+.form-comment input,
+.form-comment textarea {
+  border-radius: 10px !important;
+  font-size: 16px;
+  padding: 16px 24px !important;
+}
+.form-comment .comment-form-author {
+  margin-right: 10px !important;
+}
+.form-comment input::placeholder,
+.form-comment textarea::placeholder {
+  color: #d9d9d9 !important;
+}
+.form-comment input:focus,
+.form-comment textarea:focus {
+  border-color: #fec84d !important;
+}
+.form-comment .form-submit #submit {
+  margin-top: 16px;
+  border-radius: 40px !important;
+  background: #fcc044;
+  padding: 15px 20px;
+  color: #000c31;
+  font-weight: bold;
+  border: none;
+  transition: 0.2s;
+}
+.form-comment .form-submit #submit:hover {
+  box-shadow: 0px 0px 15px 0px #faa333;
+}
+
+/* Programa single */
+ul.curriculum-sections li * {
+    background: #ffffff !important;
+}
+
+ul.curriculum-sections li.section .section-header {
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.2s;
+    border:none;
+}
+ul.curriculum-sections li.section:not(.closed) .section-header  {
+    border-radius: 10px 10px 0 0;
+}
+
+ul.curriculum-sections li.section {
+    margin-top: 20px !important;
+}
+ul.curriculum-sections div.section-item  {
+    border-radius: 0 0 10px 10px !important;
+    padding: 0 16px !important;
+}
+
+ul.curriculum-sections ul.section-content {
+    border-radius: 0 0 10px 10px;
+}
+
+.course-curriculum .section-content li.course-item:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.course-curriculum .section-content li.course-item span.item-meta.course-item-preview:before {
+    content: 'Previsualizar';
+    border-radius: 40px !important;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: #00030f;
+    background: #FEC84D;
+    padding: 8px 16px
+}
+.curriculum-sections .section-header .section-left {
+    flex-direction: row-reverse;
+}
+
+.curriculum-sections .section-header .lp-icon-caret-down::before,
+.curriculum-sections .section-header .lp-icon-caret-up::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.2s;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg class="fa-svg-chevron-down e-font-icon-svg e-fas-chevron-down" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"/></svg>');
+}
+
+.curriculum-sections .section-header .lp-icon-caret-up::before  {
+    transform: rotate(180deg);
+    top: -24px !important;
+    position: relative;
+}
+
+ul.curriculum-sections li.section p.section-desc  {
+    display: none;
+}
+
+ul.curriculum-sections li.section:not(.closed) p.section-desc {
+    display: block;
+}
+.course-tab-panel-faqs .course-faqs-box {
+    border:none !important;
+}
+.course-tab-panel-faqs .course-faqs-box .course-faqs-box__title {
+    background: #fff !important;
+    border-radius: 10px;
+    font-family: Inter;
+    font-size: 16px;
+    border: none;
+    transition: 0.1s;
+    padding: 16px 42px 16px 32px;
+}
+.course-tab-panel-faqs .course-faqs-box .course-faqs-box__title:after {
+    transition: 0.1s;
+}
+.course-tab-panel-faqs .course-faqs-box .course-faqs-box__title:hover, .course-tab-panel-faqs .course-faqs-box .course-faqs-box__title:hover:after, input[name=course-faqs-box-ratio]:checked+.course-faqs-box .course-faqs-box__title:after, .course-tab-panel-faqs input[name=course-faqs-box-ratio]:checked+.course-faqs-box .course-faqs-box__title {
+    color: #FEC84D !important;
+}
+.course-faqs-box__content-inner {
+    padding: 16px 32px !important;
+    border-radius: 0 0 10px 10px;
+    background: #fff;
+}
+input[name=course-faqs-box-ratio]:checked+.course-faqs-box .course-faqs-box__title {
+    border-radius: 10px 10px 0 0
+}
+
+/* Perfil de LP */
+.lp-user-profile-avatar img, ul.lp-profile-nav-tabs li, .learnpress .lp-user-profile .dashboard-statistic__row .statistic-box {
+  border-radius: 10px !important; 
+}
+
+.lp-user-profile #profile-nav .lp-profile-nav-tabs>li, .learnpress .lp-user-profile .dashboard-statistic__row .statistic-box {
+  border:none;
+}
+
+h2.lp-profile-username {
+  color: #00030f;
+}
+#profile-content input, #profile-content textarea {
+  border-radius: 10px;
+  border: solid 1px #ccc; 
+  padding: 10px;
+  font-style: normal;
+  font-family: 'Inter';
+}
+
+#profile-content button[type="submit"] {
+  background: #FEC84D !important;
+  color:#00030f !important;
+  font-weight: bold !important;
+  border-radius: 40px 40px 40px 40px !important;
+  padding: 15px 20px 15px 20px !important;
+  transition: 0.2s !important;
+}
+#profile-content button[type="submit"]:hover {
+box-shadow: 0px 0px 14px 0px #FAA333 !important;
+}
+
+#profile-content .learn-press-tabs, #profile-content .learn-press-tabs ul,#profile-content .learn-press-tabs ul li {
+  border-radius: 10px !important;
+  border: none !important;
+}
+
+#profile-content ul.form-fields label, .learnpress_avatar__form__upload div  {
+  font-style: normal;
+}
+
+#profile-content .learnpress_avatar__form__upload {
+  border-radius: 10px;
+}
+
+.learn-press-message.success {
+  border-radius: 0 0 10px 10px;
+}
+
+.lp-ajax-message {
+  border: 2px solid #faa333 !important;
+}
+
+.learnpress-profile div#learn-press-profile div#profile-nav li.orders {
+    display:none !important;
+}
+.lp-modal-dialog .lp-modal-header {
+    background: #000c31 !important;
+}
