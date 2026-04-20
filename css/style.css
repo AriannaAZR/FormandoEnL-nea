@@ -196,7 +196,7 @@
   /* ── COURSE GRID ── */
   .content-area {
     position: relative;
-    padding: 40px 0 60px 40px;
+    padding: 40px;
     border-radius: var(--card-radius);
     min-height: 500px;
   }
