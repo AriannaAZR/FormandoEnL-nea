@@ -28,23 +28,20 @@
     margin: 0 auto;
     overflow: hidden;
     border-radius: var(--card-radius);
+    
   }
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: -80px; right: -80px;
-    width: 360px; height: 360px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(245,166,35,.18) 0%, transparent 70%);
-    pointer-events: none;
-  }
+  
+    
+
   .hero::after {
     content: '';
     position: absolute;
-    bottom: -60px; left: 10%;
-    width: 240px; height: 240px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(245,166,35,.10) 0%, transparent 70%);
+    bottom: -28px; right: -28px; left: -18%;
+    width: 100%; height: 470px;
+    border-radius: 100%;
+   background-image: url(../img/fondo\ inicial.webp);
+    background-size: cover;
+    background-position: center;
     pointer-events: none;
   }
   .hero-eyebrow {
@@ -229,7 +226,7 @@
     margin-bottom: 24px;
   }
   .section-header h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--e-global-typography-c0960db-font-size);
     font-size: 26px;
     color: var(--navy);
   }
@@ -333,26 +330,8 @@
     text-transform: uppercase;
   }
   .card-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 17px;
-    color: var(--navy);
-    line-height: 1.35;
-    margin-bottom: 8px;
-  }
-  .card-desc {
-    font-size: 13px;
-    color: var(--gray-text);
-    line-height: 1.6;
-    flex: 1;
-    margin-bottom: 16px;
-  }
-  .card-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 1px solid #f0f3fa;
-    padding-top: 14px;
-    margin-top: auto;
+    font-family: var(--e-global-typography-c0960db-font-size);
+margin-top: auto;
   }
   .card-info {
     display: flex;
