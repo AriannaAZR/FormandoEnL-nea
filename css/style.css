@@ -154,6 +154,63 @@
     font-size: 15px;
     flex-shrink: 0;
   }
+
+  li {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--black-text);
+    transition: color .2s;
+    
+  }
+  
+/* Estilos para el contenedor de la lista */
+.sidebar-card ul {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Animación suave */
+  list-style: none;
+  padding-left: 25px;
+  margin: 0;
+}
+
+/* Clase que aplicaremos con JavaScript para abrirlo */
+.sidebar-card ul.is-open {
+  max-height: 500px; /* Un valor alto para que quepa el contenido */
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para el enlace disparador */
+.prog-item-new {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  padding: 8px 0;
+  font-weight: 600;
+}
+
+/* Indicador visual (flecha) que rota */
+.prog-item-new::after {
+  content: '›'; 
+  margin-left: auto;
+  font-size: 1.2rem;
+  transition: transform 0.3s;
+}
+
+.prog-item-new.active::after {
+  transform: rotate(90deg); /* La flecha apunta hacia abajo al abrir */
+}
+/* Estilo para los ítems de la lista */
+.sidebar-card ul li {
+  padding: 5px 0;
+  font-size: 0.9rem;
+  color: #1a2f6e;
+}
+
  
   .cat-chip {
     display: inline-block;
@@ -237,8 +294,14 @@
     font-weight: 700;
     padding: 4px 12px;
     border-radius: 50px;
+    display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  vertical-align: middle;
     
   }
+  
  
   .courses-grid {
     display: grid;
